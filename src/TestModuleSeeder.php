@@ -3,16 +3,14 @@
 namespace Anomaly\UsersModule;
 
 use Anomaly\Streams\Platform\Database\Seeder\Seeder;
-use Anomaly\UsersModule\Role\RoleSeeder;
-use Anomaly\UsersModule\User\UserSeeder;
 
 /**
- * Class UsersModuleSeeder
+ * Class TestModuleSeeder
  *
  * @link   http://pyrocms.com/
  * @author Ryan Thompson <ryan@pyrocms.com>
  */
-class UsersModuleSeeder extends Seeder
+class TestModuleSeeder extends Seeder
 {
 
     /**
@@ -20,7 +18,7 @@ class UsersModuleSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(RoleSeeder::class);
-        $this->call(UserSeeder::class);
+        //$this->call(RoleSeeder::class);
+        //$this->call(UserSeeder::class);
     }
 }

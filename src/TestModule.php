@@ -1,17 +1,17 @@
 <?php
 
-namespace Anomaly\UsersModule;
+namespace Anomaly\TestModule;
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 
 /**
- * Class UsersModule
+ * Class TestModule
  *
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
-class UsersModule extends Module
+class TestModule extends Module
 {
 
     /**
