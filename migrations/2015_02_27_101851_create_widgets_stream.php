@@ -3,12 +3,12 @@
 use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class CreateRolesStream
+ * Class CreateWidgetsStream
  *
  * @link   http://pyrocms.com/
  * @author Ryan Thompson <ryan@pyrocms.com>
  */
-class CreateRolesStream extends Migration
+class CreateWidgetsStream extends Migration
 {
 
     /**
@@ -22,13 +22,13 @@ class CreateRolesStream extends Migration
     /**
      * The stream definition.
      *
-     * @var array
+     * @var string
      */
     protected $stream = [
-        'slug'         => 'roles',
+        'slug'         => 'widgets',
         'title_column' => 'name',
-        'translatable' => true,
         'trashable'    => true,
+        'sortable'    => true,
     ];
 
     /**
@@ -38,16 +38,9 @@ class CreateRolesStream extends Migration
      */
     protected $assignments = [
         'name'        => [
-            'required'     => true,
-            'translatable' => true,
-        ],
-        'slug'        => [
             'required' => true,
             'unique'   => true,
         ],
-        'description' => [
-            'translatable' => true,
-        ],
-        'permissions',
+        'description',
     ];
 }
